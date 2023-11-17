@@ -7,7 +7,9 @@
     "start": "tsc && node dist/index.js",
     "serve": "nodemon --exec 'ts-node' src/index.ts",
     "test:unit": "unit test",
-    "test:integration": "integration test"
+    "test:integration": "integration test",
+    "lint": "eslint --ignore-path .eslintignore --ext src/**/*.ts",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(ts|json)\""
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,16 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.9.1",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^3.0.1",
+    "prettier": "^3.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
