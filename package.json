@@ -1,0 +1,40 @@
+{
+  "name": "todo-rest-api-prototype",
+  "version": "1.0.0",
+  "description": "REST API for managing a TODO list. It supports basic CRUD operations (create, read, update, delete) for TODO items.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "serve": "nodemon --exec 'ts-node' src/index.ts",
+    "test:unit": "unit test",
+    "test:integration": "integration test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrydevmateo/TODO-REST-API-PROTOTYPE.git"
+  },
+  "keywords": [
+    "api",
+    "todo",
+    "to-do",
+    "node",
+    "typescript",
+    "ts"
+  ],
+  "author": "AdryDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adrydevmateo/TODO-REST-API-PROTOTYPE/issues"
+  },
+  "homepage": "https://github.com/Adrydevmateo/TODO-REST-API-PROTOTYPE#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
